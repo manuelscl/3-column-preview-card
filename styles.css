@@ -43,17 +43,24 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
+.card img {
+    width: 64px
+}
+
 .card-title {
     font-size: 40px;
     font-family: "Big Shoulders Display", sans-serif;
     color: var(--very-light-gray);
     margin: 20px 0;
+    text-transform: uppercase;
 }
 
 .card-description {
     font-size: 15px;
+    font-weight: 300;
     color: var(--transparent-white);
     line-height: 23px;
+    height: 115px;
 }
 
 .btn {
@@ -90,10 +97,25 @@ body {
         justify-content: center;
     }
 
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 55px;
+    }
+
     .card.sedan {
         border-radius: 10px 0 0 10px;
     }
+
     .card.luxury {
         border-radius: 0 10px 10px 0;
+    }
+    
+    .btn {
+        width: 145px;
+        height: 47px;
+        padding: 0;
+        margin-top: 70px;
     }
 }
