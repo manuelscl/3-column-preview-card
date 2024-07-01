@@ -17,13 +17,16 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .cards-section {
-    max-width: 320px;
+    width: 100%;
     margin: 20px 0;
+    padding: 20px;
 }
 
 .card {
     padding: 40px;
+    width: 320px;
 }
 
 .card.sedan {
@@ -73,4 +76,24 @@ body {
 
 .btn-luxury {
     color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        align-items: center;
+        height: 100vh;
+    }
+
+    .cards-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card.sedan {
+        border-radius: 10px 0 0 10px;
+    }
+    .card.luxury {
+        border-radius: 0 10px 10px 0;
+    }
 }
